@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  font-family: "Ysabeau Infant", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.flex {
+  background: rgba(39, 85, 112, 0.2745098039);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+}
+.flex .game {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(132, 165, 175, 0.1450980392);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  color: rgba(39, 85, 112, 0.8980392157);
+}
+.flex .game .title {
+  margin: 0 0 30px 0;
+  width: 70%;
+}
+.flex .game .title > * {
+  margin: 0 0 20px 0;
+}
+.flex .game .title__name {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 60px 0;
+  color: rgba(39, 85, 112, 0.8980392157);
+}
+.flex .game .title__text {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(40, 103, 139, 0.8549019608);
+}
+.flex .game .title__discription {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 24px;
+  color: #06486e;
+}
+.flex .game #message {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+.flex .game ._win {
+  color: rgba(16, 119, 16, 0.808);
+}
+.flex .game ._try-again {
+  color: rgb(184, 144, 15);
+}
+.flex .game ._isNAN {
+  color: rgb(255, 0, 0);
+}
+.flex .game .game-start {
+  display: flex;
+  justify-content: center;
+}
+.flex .game .game-start #input {
+  border: 0.2px solid rgb(20, 15, 15);
+  margin: 20px;
+  height: 30px;
+}
+.flex .game .game-start .GO {
+  border: 0.02px solid rgba(20, 15, 15, 0.164);
+  width: 80px;
+  background: #9bcde4;
+  font-size: 16px;
+  color: rgb(73, 77, 83);
+  height: 30px;
+  margin: 20px 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 3px 0px, rgba(60, 64, 67, 0.15) 0px 3px 7px 3px;
+}
+.flex .game .game-start .GO:hover {
+  background: #56aad1;
+}
+.flex .game .game-start .GO:active {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.flex .game .restart {
+  border: 0.02px solid rgba(20, 15, 15, 0.164);
+  width: 160px;
+  padding: 6px;
+  margin: 0 0 20px 0;
+  background: #9bcde4;
+  font-size: 20px;
+  color: rgb(73, 77, 83);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 3px 0px, rgba(60, 64, 67, 0.15) 0px 3px 7px 3px;
+}
+.flex .game .restart:hover {
+  background: #56aad1;
+}
+.flex .game .restart:active {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.flex .game .count-block {
+  height: 22px;
+}
+.flex .game .count-block .counter {
+  font-size: 22px;
+}
